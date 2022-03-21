@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="noten, choral, notensatzprogramm, freeware, jufo" />
+        <meta name="description" content="Alte Noten neu gesetzt: Das Choralprogramm für Profis!">
+        <title>Choralprogramm - by Michael Lukas</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <script src="https://kit.fontawesome.com/31bfc4a670.js" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="./scripts/dropdown_menu.js"></script>
+    </head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu__btn"><span class="fas fa-bars"></span></label>
+        <a href="#"><i class="fa-solid fa-house logo hover__img" alt="Home"></i></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#project" class="nav__link" onclick="closeMenu()">Projekt</a></li>
+            <li class="nav__item"><a href="#documentation" class="nav__link" onclick="closeMenu()">Dokumentation</a></li>
+            <li class="nav__item"><a href="#download" class="nav__link" onclick="closeMenu()">Download</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link" onclick="closeMenu()">Kontakt</a></li>
+        </ul>
+    </nav>
+    <!-- Page header -->
+    <header class="head">
+        <div class="container spacing" id="head-container">
+            <h1>Das Choralprogramm</h1>
+            <p>Ein Projekt für den Wettbewerb Jugend forscht 2022</p>
+            <a href="#project" class="btn">Zum Projekt</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="project" id="project">
+
+        </section>
+        <hr>
+        <section class="documentation" id="documentation">
+
+        </section>
+        <hr>
+        <section class="download" id="download">
+
+        </section>
+        <hr>
+        <section class="contact" id="contact">
+            <div class="container" style="padding-bottom: 2em;">
+                <h2 class="section-title">Kontakt</h2>
+                <p style="text-align: center;">Bei Fragen, Anregungen etc. schreiben Sie mir gerne eine Nachricht an <a href="mailto:milu.rgb@gmx.de" target="_blank" class="link">milu.rgb@gmx.de</a> oder nutzen Sie das nachfolgende Kontaktformular!<br><br></p>
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <div class="spacing split">
+                        <label for="name" style="margin-top: 2rem;">Name: <span style="color: red;">*</span></label>
+                        <input type="text" name="name" id="full__name" placeholder="Vorname, Nachname" class="input__field" required>
+                        <label for="email">Email: <span style="color: red;">*</span></label>
+                        <input type="email" name="email" id="email__address" placeholder="Email-Adresse" class="input__field" required>
+                        <label for="message">Nachricht: <span style="color: red;">*</span></label>
+                        <textarea name="message" id="message__text" rows="10" placeholder="Ihre Nachricht..." class="input__field" required></textarea>
+                        <label for="file">Datei auswählen:</label>
+                        <input type="file" name="file" id="file__attached" class="input__field">
+                        <label for="recaptcha">Verifizierung: <span style="color: red;">*</span></label>
+                        <div name="recaptcha" class="g-recaptcha" data-sitekey="6LeMfF8aAAAAAMvsqYL0Zqg7gY7a1w7VOLOK4EnK"></div>
+                        <div></div>
+                        <input type="submit" value="Senden" class="btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
