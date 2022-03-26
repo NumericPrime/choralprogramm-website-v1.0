@@ -1,0 +1,185 @@
+<head>
+<link rel="stylesheet" href="Style.css">
+<title>Die Bedienung</title>
+</head>
+<body id="myelement" style="padding-left: 2em;padding-top: 2em;">
+<header class="section-title"><b>Bedienungsanleitung</b></header>
+<img src="Grafik.png" width=600px>
+<ol>
+<li>
+Der Code: <br /> Über diesen Code wird der fertige Choral generiert. Diese kann exportieren werden.
+</li><li>
+Das Öffnen von Chorälen: <br />Grundsätzlich kann das Programm alle Dateiformate einlesen, die wie Text-Dateien funktionieren. Das schließt Dokumente, die mit Office gemacht wurden aus.
+</li><li>
+Funktionen des Texteditors: <br /> Der Codebereich verfügt über die wichtigsten Funktionen eines Texteditors, wie Öffnen, Speichern, sowie die Möglicht Änderungen rückgängig zu machen.
+</li><li>
+Der Pdf-Export: <br />Der Pdf-Export erlaubt es den Choral zu drucken. Der Speicherort wird in der Einstellungsdatei festgelegt.
+</li><li>
+Die Abspielfunktion: <br />Diese Funktion erlaubt es den Choral zusätzlich abzuspielen. Die verschiedenen Notentypen haben unterschiedliche Längen, was versucht die Funktion der einzelnen Typen nachzuahmen.
+</li>
+</ol>
+<b class="head4">Die Befehle</b>
+<p>Das schreiben von Chorälen mithilfe des Programmes erfordert verschiedene Befehle. Jeder dieser wird in eine eigene Zeile geschrieben. Insgesammt gibt es 14 verschiedene Befehle jedoch kann man mithilfe verschiedener Abkürzungen mit nur 8 davon auskommen, davon sind zwei nicht direkt am Notenbild beteiligt.</p>
+<p>Zusätzlich gibt es Kurzformen, mit denen man Eingaben selbst ohne Befehle tätigen kann.</p>
+<details><summary><b class="head4">Einzelnoten</b></summary>
+<p>Einzelnoten kann man über den Befehl <b>pun</b> einfügen.</p>
+<p><b>Syntax:</b><br>pun h t</p>
+<ul>
+<li>h ist die Tonhöhe</li>
+<li>t ist der Notentyp</li>
+</ul>
+<p><b>Die verschiedenen Notentypen:</b></p>
+<ul>
+<li>pun G 0  <img src="Scrs/Bsp/Pun0.png" align=middle></li>
+<li>pun G 1  <img src="Scrs/Bsp/Pun1.png" align=middle></li>
+<li>pun G 2  <img src="Scrs/Bsp/Pun2.png" align=middle></li>
+<li>pun G 3  <img src="Scrs/Bsp/Pun3.png" align=middle></li>
+</ul>
+</details><details><summary><b class="head4">Zweiergruppe</b></summary>
+<p>Zweiergruppen kann man über den Befehl <b>pes</b> einfügen.</p>
+<p><b>Syntax:</b><br>pes h1 h2 t</p>
+<ul>
+<li>h1 ist die Tonhöhe des 1. Tons</li>
+<li>h2 ist die Tonhöhe des 2. Tons</li>
+<li>t ist der Notentyp</li>
+</ul>
+<p>Mit t=0 wird das Programm die Gruppe als ein Pes dargestellt. Ist dies jedoch nicht erlaubt, da der 1. Ton über dem 2. Ton liegt, wird es stattdessen als Clivis dargestellt.</p>
+<p><b>Die verschiedenen Notentypen:</b></p>
+<ul>
+<li>pes A C 0  <img src="Scrs/Bsp/Pes0_1.png" align=middle></li>
+<li>pes C A 0  <img src="Scrs/Bsp/Pes0_2.png" align=middle></li>
+<li>pes A C 1  <img src="Scrs/Bsp/Pes1.png" align=middle></li>
+<li>pes A C 2  <img src="Scrs/Bsp/Pes2.png" align=middle></li>
+</ul></details>
+
+<details><summary><b class="head4">Dreiergruppe</b></summary>
+<p>Eine Dreiergruppe kann man über den Befehl <b>tor</b> einfügen.</p>
+<p><b>Syntax:</b><br>tor h1 h2 h3 t</p>
+<ul>
+<li>h1 ist die Tonhöhe des 1. Tons</li>
+<li>h2 ist die Tonhöhe des 2. Tons</li>
+<li>h3 ist die Tonhöhe des 3. Tons</li>
+<li>t ist der Notentyp</li>
+</ul>
+<p><b>Die verschiedenen Notentypen:</b></p>
+<ul>
+<li>tor A F H 0  <img src="Scrs/Bsp/Tor0.png" align=middle></li>
+<li>tor A F H 1  <img src="Scrs/Bsp/Tor1.png" align=middle></li>
+</ul>
+</details>
+
+<details><summary><b class="head4">Andere Zeichen</b></summary>
+<details><summary><span class="head3">Schlüssel</span></summary>
+<p>Schlüssel kann man über den Befehl <b>sc</b> einfügen.</p>
+<p><b>Syntax:</b><br>sc l t</p>
+<ul>
+<li>l ist die Notenlinie von oben</li>
+<li>t ist der Schlüsseltyp</li></ul>
+<p><b>Die verschiedenen Schlüsseltypen:</b></p>
+<ul>
+<p>Schlüssel werden automatisch bei allen weiteren Zeilen übernommen. Eine Änderung ist auch möglich und demnach werden die Schlüssel aktualisiert.</p>
+
+<li>sc 1 0  <img src="Scrs/Bsp/Sc0.png" align=middle></li>
+<li>sc 1 1  <img src="Scrs/Bsp/Sc1.png" align=middle></li>
+</ul></details>
+
+<details><summary><span class="head3">Pausen</span></summary>
+<p>Pausen kann man über den Befehl <b>pa</b> einfügen.</p>
+<p><b>Syntax:</b><br>pa t</p>
+<ul>
+<li>t ist der Pausentyp</li>
+</ul>
+<p><b>Die verschiedenen Pausentypen:</b></p>
+<ul>
+<li>pa 0  <img src="Scrs/Bsp/Pa0.png" align=middle></li>
+<li>pa 1  <img src="Scrs/Bsp/Pa1.png" align=middle></li>
+<li>pa 2  <img src="Scrs/Bsp/Pa2.png" align=middle></li>
+<li>pa 3  <img src="Scrs/Bsp/Pa3.png" align=middle></li>
+</ul></details>
+
+<details><summary><span class="head3">b's</span></summary>
+<p>Ein b kann man über den Befehl <b>b</b> einfügen.</p>
+<p><b>Syntax:</b><br>b h</p>
+<ul>
+<li>h ist die Tonhöhe</li>
+</ul>
+<p>Anstelle dieses Befehles kann man auch bei jeder anderen Tonhöhe ein b anhängen und es entsteht ein b an der zugehörigen Stelle.</p>
+<p><b>Beispiel:</b></p>
+<ul>
+<li>b A  <img src="Scrs/Bsp/B.png" align=middle></li>
+</ul></details></details>
+
+<details><summary><b class="head4">Anderes</b></summary>
+<details><summary><span class="head3">Liedtext</span></summary>
+<p>Das Einfügen eines Liedtextes braucht keinen Befehl, man kann ihn in eine Zeile schreiben und er wird eingefügt.</p>
+<p>Es gibt aber auch die Möglichkeit den Text erst nach einer gewissen Anzahl von Noten einfügen zu lassen. Dazu wird vor Beginn der nächsten Grupp +n+ eingegeben, wobei n die Zahl der zu überspringenden Noten ist.</p>
+<p>So würde  <br>Silbe 1+5+Silbe<br>Die 2. Silbe erst nach 5 Noten eingefügen.</p></details>
+
+<details><summary><span class="head3">Quilismen</span></summary>
+<p>Ein Quilisma kann man über den Befehl <b>q</b> einfügen.</p>
+<p><b>Syntax:</b><br>q t n</p>
+<ul>
+<li>t ist die Tonhöhe</li>
+<li>n ist die Nummer der Note</li>
+</ul>
+<p>Der Befehl bezieht sich immer auf die vorherige Zeile im Code.</p>
+<p>Ein Quillisma in diesem Programm sieht folgendermaßen aus:</p>
+<ul><li><p><img src="Scrs/Bsp/q.png" align=middle></p></li></ul></details>
+
+<details><summary><span class="head3">Lücken</span></summary>
+<p>Lücken kann man über den Befehl <b>gap</b> einfügen.</p></details>
+
+<details><summary><span class="head3">Neue Zeilen</span></summary>
+<p>Neue Zeilen kann man über den Befehl <b>newline</b> einfügen.</p></details>
+<details><summary><span class="head3">Skalierung</span></summary>
+<p>Man kann die Noten vergrößern oder verkleinern mithilfe des Befehls <b>scal</b>.</p>
+<p>Dieser Befehl <b>muss in der ersten Zeile des Codes stehen</b></p>
+<p><b>Syntax:</b><br>scal g</p>
+<ul>
+<li>g ist die Größe, sie wird mithilfe eines . statt eines , angegeben z.B. 0.6 statt 0,6</li>
+</ul>
+<p>Es ist empfohlen für g mindestens 0.67 zu verwenden.</p></details>
+
+<details><summary><span class="head3">Überschriften</span></summary>
+<p>Eine Überschrift kann mit dem Befehl <b>text</b> eingefügt werden.</p>
+<p>Dieser Befehl <b>muss, wenn er verwendet wird,in der zweiten Zeile des Codes stehen</b></p>
+<p><b>Syntax:</b><br>text o s</p>
+<ul>
+<li>o ist die Bündigkeit</li>
+<li>s ist die Überschrift</li>
+</ul>
+<p><b>Die Bündigkeiten</b></p>
+<ul>
+<li>o=0 ist Linksbündig</li>
+<li>o=1 ist Mittelbündig</li>
+<li>o=2 ist Rechtsbündig</li>
+</ul>
+<p>Ein Beispiel wäre <br>text 1 Das ist die Überschrift</p></details>
+
+<details><summary><span class="head3">Markierungen</span></summary>
+<p>Wenn man nicht mehr weiß, wo man sich im Code befindet, kann man den Befehl <b>M</b> einfügen und die nächste Note wird Rot markiert.</p>
+</details></details>
+
+<details><summary><b class="head4">Abkürzungen</b></summary>
+
+<details><summary><span class="head3">Notentyp</span></summary>
+<p> Wenn der Notentyp 0 ist kann man ihn weglassen</p>
+<p> Bsp:<br>pun G 0 = pun G</p></details>
+<details><summary><span class="head3">Befehl für Gruppen im Allgemeinen</span></summary>
+<p>Man kann die Befehle pun,pes und tor auch durch <b><</b> ersetzen. Jedoch erlaubt diese Formulierung nicht den Notentyp abzukürzen.</p>
+</details>
+<details><summary><span class="head3">Eingabe ohne Code</span></summary>
+<p>Es ist auch eine Eingabe ohne Code möglich. Wenn man das Ausgabefenster anklickt, kann man die folgenden Kurzformen verwenden:</p>
+<table style="width:40%"><tr><th class="col">1.Eingabe</th><th class="col">2.Eingabe</th><th class="col">3.Eingabe</th><th class="col">Effekt</th></tr>
+<tr><th>Tonhöhen<br>Bsp:A+Gb</th><th>Zahl</th><th></th><th>Es wird eine Notengruppe generiert, mit der Zahl als Notentyp</th></tr>
+<tr><th><kbd>Leerzeichen</kbd></th><th></th><th></th><th>Es entsteht eine Lücke</th></tr>
+<tr><th><kbd>Enter</kbd></th><th></th><th></th><th>Es entsteht eine neue Zeile</th></tr>
+<tr><th>q</th><th>Tonhöhe</th><th>Zahl</th><th>Es entsteht ein Quillisma, auf der Tonhöhe mit der Zahl <br>als Nummer der Note in der letzten Gruppe</th></tr>
+<tr><th>q</th><th>Tonhöhe</th><th>Enter</th><th>Es entsteht ein Quillisma, auf der Tonhöhe</th></tr>
+<tr><th>#</th><th>Text</th><th>Enter</th><th>Es wird ein Liedtext eingefügt</th></tr>
+<tr><th><kbd>Backspace</kbd></th><th></th><th></th><th>Die aktuelle Eingabe wird gelöscht.<br>Wenn nichts eingegeben wurde wird der letzte Befehl gelöscht.</th></tr>
+
+<tr><th>p</th><th>Zahl</th><th></th><th>Es wird eine Pause erstellt die Zahl wird der Pausentyp</th></tr>
+</table>
+</details></details>
+</body>
