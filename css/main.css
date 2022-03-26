@@ -20,7 +20,7 @@ transform: rotate(-10deg);
 }
 #myelement{
 	position: relative;
-	background: url("assets/images/Hintergrund.png") 0 0 repeat;
+	background: url("../assets/images/Hintergrund.png") 0 0 repeat;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -344,6 +344,31 @@ hr {
   }
 }
 
+tr:nth-child(odd){
+background-color: #F3F3F3;
+}
+table, th,td{
+border:1px solid black;
+padding: 3.5px;
+border-collapse: collapse;
+}
+
+th,td{
+text-align: left;
+padding: 8p;
+}
+th.col{
+border:1px solid white;
+border-collapse: collapse;
+background-color: rgb(50,50,120);
+color:white;
+}
+td.col{
+border:1px solid white;
+border-collapse: collapse;
+background-color: rgb(50,50,120);
+color:white;
+}
 tr:nth-child(odd){
 background-color: #F3F3F3;
 }
