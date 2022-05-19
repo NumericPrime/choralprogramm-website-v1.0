@@ -1,0 +1,118 @@
+scal 0.65
+text 1 Zur Kommunion (Co.II)
+sc 2 1
+Domi-
+pun G
+pun F
+pes G H
+q 4
+pun A 1
+pun G 1
+pun A 
+gap
+ne
+pes A G
+pa 1
+Do-
+tor H c H
+mi-
+pes H A
+nus
+pun G
+gap
+no-
+pun G
+pun A
+q A
+tor H A H 1
+ster
+pes A G
+pa 3
+quam
+pun H 1
+pun c 1
+b e
+tor d e d
+ad
+pun d
+gap
+mi-
+pes d c
+ra-
+pun d
+gap
+bi-
+pun c
+gap
+le
+pun c 2
+pun H 3
+gap
+est
+pun d
+newline
+gap
+no-
+pun H 2
+pun A 1
+pun F 1
+pes G A
+men
+pun G
+pa 1
+tu-
+tor G c H
+pun H 2
+pun A
+pun F
+pun G
+pes A H
+q A
+pun A 1
+pun G 1
+pun A
+um
+pes A G
+*
+pa 1
+in
+pun D
+u-
+pes F G
+ni-
+pes G F
+ver-
+pun G 2
+pun H
+pun H
+pun H 2
+pun G
+pun F
+pun E
+pun A 3
+pun F
+tor G F G 2
+gap
+sa
+pun G
+pa 1
+ter-
+pun G 1
+pun A 1
+pun H 2
+pun A 1
+pun G 1
+newline
+pun A
+ra!
+pes A G
+pa 4
+
+!-! Schriftgroese:20
+!-! SchriftgroeseUeberschrift:50
+!-! Text-Verschiebung: 5
+!-! Liedtext-Groese:19
+!-! Notenabstand:19
+!-! Zeilenabstand:26
+!-! Notengroese:14
+!-! UeberschriftVerschiebung: 10
